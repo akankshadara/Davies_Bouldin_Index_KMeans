@@ -9,3 +9,8 @@ Usage: Execute the following command on the command line:
 ```{r, engine='bash', count_lines}
 python index.py
 ```
+
+The following python libraries are the required dependencies for this code:
+> sklearn
+> scipy 
+> pandas
