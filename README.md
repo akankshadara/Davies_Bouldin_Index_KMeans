@@ -11,6 +11,6 @@ python index.py
 ```
 
 The following python libraries are the required dependencies for this code:
-> sklearn\n
-> scipy\n
+> sklearn, 
+> scipy, 
 > pandas
