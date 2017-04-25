@@ -45,7 +45,7 @@ def compute_DB_index(x, labels, clusters, nc):
 	return DB_index
 
 def main():
-	df = pd.read_csv("Round1_Problem2-of-3_Dataset.csv")
+	df = pd.read_csv("dataset.csv")
 	df = df.dropna()
 	# print df
 	x1 = df.copy()
@@ -60,7 +60,7 @@ def main():
 	labels = clf[1] 
 	# print x4[1]
 	index_db_val = compute_DB_index(x4, labels, centroids, n)
-	print index_db_val
+	print "The value of Davies Bouldin index for a K-Means cluser of size " + str(n) + " is: " + str(index_db_val)
 
 
 if __name__ == "__main__":
