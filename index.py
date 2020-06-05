@@ -8,9 +8,8 @@ from scipy.spatial import distance
 def compute_s(i, x, labels, clusters):
 	norm_c= len(clusters)
 	s = 0
-	for x in clusters:
-		# print x
-		s += distance.euclidean(x, clusters[i])
+	for c in clusters:
+		s += distance.euclidean(c, clusters[i])
 	return s/norm_c
 
 def compute_Rij(i, j, x, labels, clusters, nc):
