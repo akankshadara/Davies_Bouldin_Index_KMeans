@@ -14,7 +14,7 @@ def compute_s(i, x, labels, clusters):
 	return s/norm_c
 
 def compute_Rij(i, j, x, labels, clusters, nc):
-	Rij = 0
+	Rij = 0.0
 	try:
 		# print "h"
 		d = distance.euclidean(clusters[i],clusters[j])
